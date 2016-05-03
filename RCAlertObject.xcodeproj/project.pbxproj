@@ -15,6 +15,7 @@
 		B0FDA8BF1CD3507000892B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FDA8BD1CD3507000892B9F /* LaunchScreen.storyboard */; };
 		B0FDA8CA1CD3507100892B9F /* RCAlertObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FDA8C91CD3507100892B9F /* RCAlertObjectTests.m */; };
 		B0FDA8D51CD3507100892B9F /* RCAlertObjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FDA8D41CD3507100892B9F /* RCAlertObjectUITests.m */; };
+		B0FDA8E51CD3611100892B9F /* RCAlertObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FDA8E41CD3611100892B9F /* RCAlertObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B0FDA8D01CD3507100892B9F /* RCAlertObjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCAlertObjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FDA8D41CD3507100892B9F /* RCAlertObjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCAlertObjectUITests.m; sourceTree = "<group>"; };
 		B0FDA8D61CD3507100892B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FDA8E31CD3611100892B9F /* RCAlertObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCAlertObject.h; sourceTree = "<group>"; };
+		B0FDA8E41CD3611100892B9F /* RCAlertObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCAlertObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		B0FDA8A31CD3507000892B9F = {
 			isa = PBXGroup;
 			children = (
+				B0FDA8E21CD3611100892B9F /* RCAlertObject_Class */,
 				B0FDA8AE1CD3507000892B9F /* RCAlertObject */,
 				B0FDA8C81CD3507100892B9F /* RCAlertObjectTests */,
 				B0FDA8D31CD3507100892B9F /* RCAlertObjectUITests */,
@@ -138,6 +142,15 @@
 				B0FDA8D61CD3507100892B9F /* Info.plist */,
 			);
 			path = RCAlertObjectUITests;
+			sourceTree = "<group>";
+		};
+		B0FDA8E21CD3611100892B9F /* RCAlertObject_Class */ = {
+			isa = PBXGroup;
+			children = (
+				B0FDA8E31CD3611100892B9F /* RCAlertObject.h */,
+				B0FDA8E41CD3611100892B9F /* RCAlertObject.m */,
+			);
+			path = RCAlertObject_Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +285,7 @@
 			files = (
 				B0FDA8B71CD3507000892B9F /* ViewController.m in Sources */,
 				B0FDA8B41CD3507000892B9F /* AppDelegate.m in Sources */,
+				B0FDA8E51CD3611100892B9F /* RCAlertObject.m in Sources */,
 				B0FDA8B11CD3507000892B9F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RCAlertObject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RoyChang.RCAlertObject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RCAlertObject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RoyChang.RCAlertObject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
