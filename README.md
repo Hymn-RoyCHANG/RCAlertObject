@@ -34,9 +34,9 @@
 }
 ```
 
-![ActionSheet样式](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_1.png)
-![Alert样式](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_2.png)
-![Demo](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_3.png)
+![Demo](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_1.png)
+![ActionSheet样式](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_2.png)
+![Alert样式](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_3.png)
 
 # MIT License
 
