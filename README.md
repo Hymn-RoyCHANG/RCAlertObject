@@ -1,12 +1,45 @@
 # RCAlertObject
-对UIAlertView／UIActionSheet／UIAlertController的简单的统一的封装，还有不足之处.
-对于代理的回调问题：iOS7及以下请用UIAlertView或者UIActionSheet自身的代理，详见头文件
+## 对UIAlertView／UIActionSheet／UIAlertController的简单的统一的封装，能力有限.
 
-![image1](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_1.png)
-![image2](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_2.png)
-![image3](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_3.png)
+对于代理的回调问题：iOS7及以下请用UIAlertView或者UIActionSheet自身的代理，详见头文件.
 
-MIT License
+## 如何使用
+
+```Objective-C
+    // code in ViewController.m
+    RCAlertObject *alertObj = [[RCAlertObject alloc] initWithAlertType:RCAlertTypeAlert title:@"Unity Alert" cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Destructive"];
+    alertObj.message = @"My Message";
+    alertObj.alertDelegate = (id<RCAlertObjectDelegate>)self;
+    [alertObj addOtherButtonTitles:@[@"Button1", @"Button2", @"Button3"]];
+    [alertObj showInViewController:self];
+    #pragma mark - RCAlertObjectDelegate
+    
+// iOS 8.0+ Alert/ActionSheet 回调这个方法
+- (void)alert:(RCAlertObject *)alert didClickedIndex:(NSInteger)index
+{
+    NSLog(@"\n[%@] clicked (%d) index.", NSStringFromClass(alert.class), (int)index);
+}
+
+// iOS 7.0及以下 回调是系统的方法
+
+// iOS 7.0及以下 Alert 回调这个方法
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"\n[%@] clicked (%d) index.", NSStringFromClass(alertView.class), (int)buttonIndex);
+}
+
+// iOS 7.0及以下 ActionSheet 回调这个方法
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"\n[%@] clicked (%d) index.", NSStringFromClass(actionSheet.class), (int)buttonIndex);
+}
+```
+
+![image](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_1.png)
+![image](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_2.png)
+![image](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_3.png)
+
+# MIT License
 
 Copyright (c) 2016 Roy CHANG
 
