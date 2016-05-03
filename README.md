@@ -12,7 +12,6 @@
     alertObj.alertDelegate = (id<RCAlertObjectDelegate>)self;
     [alertObj addOtherButtonTitles:@[@"Button1", @"Button2", @"Button3"]];
     [alertObj showInViewController:self];
-    #pragma mark - RCAlertObjectDelegate
     
 // iOS 8.0+ Alert/ActionSheet 回调这个方法
 - (void)alert:(RCAlertObject *)alert didClickedIndex:(NSInteger)index
@@ -35,9 +34,9 @@
 }
 ```
 
-![image](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_1.png)
-![image](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_2.png)
-![image](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_3.png)
+![ActionSheet样式](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_1.png)
+![Alert样式](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_2.png)
+![Demo](https://github.com/Hymn-RoyCHANG/RCAlertObject/raw/master/Images/rcalert_3.png)
 
 # MIT License
 
