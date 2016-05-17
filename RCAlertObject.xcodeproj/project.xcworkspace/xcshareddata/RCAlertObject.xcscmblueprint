@@ -1,0 +1,28 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6C8AD2C45821BFEA46C4DD0C8FF572FF9BD586D7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6C8AD2C45821BFEA46C4DD0C8FF572FF9BD586D7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ADA1DBB0-AE62-4A01-A392-5A3545BC4E5D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6C8AD2C45821BFEA46C4DD0C8FF572FF9BD586D7" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RCAlertObject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RCAlertObject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Hymn-RoyCHANG\/RCAlertObject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6C8AD2C45821BFEA46C4DD0C8FF572FF9BD586D7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/YungYiChang\/RCAlertObject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6C8AD2C45821BFEA46C4DD0C8FF572FF9BD586D7"
+    }
+  ]
+}

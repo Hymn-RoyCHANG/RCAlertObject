@@ -19,8 +19,6 @@
 #define RC_Foundation_IOS_7_1       (1047.25)
 #endif
 
-#define RCLog(fmt, ...) NSLog(fmt, ## __VA_ARGS__)
-
 #define RC_CANCEL_DEFINDEX          -99
 #define RC_DESTRUCTIVE_DEFINDEX     -88
 
@@ -137,6 +135,16 @@ NSString *const kActionIndex = @"RCActionIndex";
     }
     
     return self;
+}
+
+- (void)dealloc
+{
+#if !__has_feature(objc_arc)
+    [_internalAlertObject release];
+    [super dealloc];
+#else
+    _internalAlertObject = nil;
+#endif
 }
 
 ///初始化
